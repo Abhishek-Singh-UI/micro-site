@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/pdp_styles.css">
+    <script src="../script/pdp-app.js" type="module"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"
+></script>
+</head>
+<body>
+     <!-- for pdp  -->
+     <div class="pdp-wrapper">
+        <div class="header">
+          <a class="logo-div" href="#">
+            <img src="../images/logo.jpg" alt="cannot load image" />
+          </a>
+          <nav class="menu-div d-none d-md-flex" id="menu-id">
+            <ul class="menu">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Home &amp; Living</a></li>
+              <li><a href="#">Beauty</a></li>
+              <li><a href="#">Studio</a></li>
+            </ul>
+          </nav>
+          <form class="search-div d-none d-md-flex">
+            <input
+              type="text"
+              id="search-input"
+              name="search-name"
+              placeholder="search"
+            />
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </form>
+          <div class="utilities-div d-none d-md-flex">
+            <div class="profile-div">
+              <i class="fa-regular fa-user"></i>
+              <p class="profile-text">Profile</p>
+            </div>
+            <div class="wishlist-div">
+              <i class="fa-regular fa-heart"></i>
+              <p class="wishlist-text">Wishlist</p>
+            </div>
+            <div class="cart-div">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p class="cart-text">Bag</p>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="d-block d-md-none hamburger"
+            id="hamburger-id"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="main-container">
+          <div class="breadcrumbs-product" id="breadcrumb-id">
+            <p>Home/Clothing/Men Clothing/Tshirts/HRX By Hrithik Roshan Tshirts>More By HRX By Hrithik Roshan</p>
+          </div>
+          <div class="product" id="product-id">
+            <div class="product-image">
+              <img id="product-img" src="../images/product-image.jpg" alt="cannot use imahge" />
+            </div>
+            <div class="product-details">
+              <h1 class="title-product" id="title-id">HRX by Hrithik Roshan</h1>
+              <p class="short-description" id="description-id">
+                Ultralyte Men Navy Blue Running T-shirt
+              </p>
+              <p class="ratings" id="rating-id">4.2 &star;</p>
+              <div class="price" id="price-id">
+                ₹314 <span>MRP 899</span> <span>65% OFF</span>
+              </div>
+              <form class="sizes">
+                <label for="s-size">S</label>
+                <input type="radio" id="s-size" name="S" value="S" />
+                <label for="m-size">M</label>
+                <input type="radio" id="m-size" name="S" value="M" />
+                <label for="l-size">L</label>
+                <input type="radio" id="l-size" name="S" value="L" />
+                <label for="xl-size">XL</label>
+                <input type="radio" id="xl-size" name="S" value="XL" />
+                <div class="buttons">
+                  <button type="submit" class="add-button">add to cart</button>
+                  <button type="button" class="wishlist-button">wishlist</button>
+                </div>
+              </form>
+              <div class="product-description">
+                <h4>Product Details</h4>
+                Swap your usual T-shirt with the HRX Men's Running T-shirt and
+                feel your run become easier and more comfortable. Designed with
+                Rapid Dry technology, it wicks away sweat to keep you cool and
+                dry from start to finish.
+              </div>
+              <div class="features">
+                <h4>Features</h4>
+                Rapid Dry technology wicks sweat and dries fast Anti-Microbial
+                technology keeps odor-causing microbes away Lightweight fabric
+                makes movement easier Typographic print across chest Neck: Round
+                Neck Sleeve Style: Regular Sleeve Length: Short T-shirt Length:
+                Regular Fit: Regular
+              </div>
+              <div class="material">
+                <h4>Material</h4>
+                100% polyester<br> Machine-wash
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <hr />
+          <nav class="footer-nav menu-div">
+            <ul class="footer-ul menu">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Home &amp; Living</a></li>
+              <li><a href="#">Beauty</a></li>
+              <li><a href="#">Studio</a></li>
+            </ul>
+          </nav>
+        </div>
+        
+      </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./app.js" defer></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <a class="logo-div" href="#">
+          <img src="./images/logo.jpg" alt="cannot load image" />
+        </a>
+        <nav class="menu-div d-none d-md-flex" id="menu-id">
+          <ul class="menu">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Home &amp; Living</a></li>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Studio</a></li>
+          </ul>
+        </nav>
+        <form class="search-div d-none d-md-flex">
+          <input
+            type="text"
+            id="search-input"
+            name="search-name"
+            placeholder="search"
+          />
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </form>
+        <div class="utilities-div d-none d-md-flex">
+          <div class="profile-div">
+            <i class="fa-regular fa-user"></i>
+            <p class="profile-text">Profile</p>
+          </div>
+          <div class="wishlist-div">
+            <i class="fa-regular fa-heart"></i>
+            <p class="wishlist-text">Wishlist</p>
+          </div>
+          <div class="cart-div">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="cart-text">Bag</p>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="d-block d-md-none hamburger"
+          id="hamburger_id"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- homepage slider -->
+      <div class="slider">
+        <div class="slideshow-container">
+          <div class="mySlides fades">
+            <img src="./images/banner-1.jpg" alt="cannot load image" />
+          </div>
+
+          <div class="mySlides fades">
+            <img src="./images/banner-2.jpg" alt="cannot load image" />
+          </div>
+
+          <div class="mySlides fades">
+            <img src="./images/banner-3.jpg" alt="cannot load image" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+      </div>
+
+      <!-- for fetch data -->
+      <h1>Products</h1>
+
+      <!-- products slider -->
+       <div class="slider">
+        <div class="slideshow-container" id="product-slideshow-container">
+
+          <button class="prev" id="prev-id" >&lt;</button>
+          <button class="next" id="next-id" >&gt;</button>
+        </div>
+      </div> 
+
+      <!-- footer -->
+      <div class="footer">
+        <hr />
+        <nav class="footer-nav menu-div">
+          <ul class="footer-ul menu">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Home &amp; Living</a></li>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Studio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script src="./script/slider.js"></script>
+    <script src="./script/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+@import "./variables.scss";
+body {
+  margin: 0;
+}
+.wrapper {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+//header styles
+.header {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  padding-top: 25px;
+  position: relative;
+}
+.logo-div {
+  width: 5%;
+  img {
+    width: 100%;
+  }
+  @media #{$mobile} {
+    width: 15%;
+  }
+}
+.menu-div {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 0 2%;
+      a {
+        text-decoration: none;
+        color: #717171;
+        font-size: large;
+        white-space: nowrap;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    @media #{$mobile} {
+      flex-direction: column;
+    }
+  }
+  // @media #{$mobile} {
+  //   flex-direction: row;
+  // }
+  @media #{$mobile} {
+    // display: none;
+    position: absolute;
+    right: 0;
+    top: 94px;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    background: beige;
+  }
+}
+.search-div {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  position: relative;
+  #search-input {
+    padding: 5% 10%;
+    width: 100%;
+  }
+  a {
+    position: absolute;
+    left: 3px;
+    i {
+      color: grey;
+      width: 100%;
+    }
+  }
+}
+.utilities-div {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  div {
+    padding: 0 2%;
+    text-align: center;
+    p {
+      margin: 2% 0 0 0;
+    }
+  }
+}
+.hamburger {
+  text-decoration: none;
+}
+
+//footer styles
+.footer {
+  .footer-nav {
+    padding: 3% 0;
+  }
+  @media #{$mobile} {
+    display: none;
+  }
+  
+}
+
+//slider styles
+.mySlides,
+.Product-slides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+.mySlides {
+  img {
+    width: 100%;
+  }
+}
+.product-image {
+  width: 100%;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Fading animation */
+.fades {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fades {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
